@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gra Statki</title>
+  <link rel="stylesheet" href="1.css" />
+</head>
+<body>
+  <h1>Gra „Statki”</h1>
+  <h2 id="current-player-label">Gracz 1: Rozmieść statki</h2>
+
+  <div class="game-container" id="placement-section">
+    <div class="ship-selection" id="ship-selection"></div>
+    <div class="board" id="placement-board"></div>
+  </div>
+
+  <button id="ready-btn">Gotowe</button>
+
+  <div id="battle-section" style="display:none;">
+    <h2 id="battle-status">Tura: Gracz 1</h2>
+    <div class="game-container">
+      <div>
+        <p>Pole Gracza 1</p>
+        <div class="board" id="board1"></div>
+        <p>Trafienia Gracza 2: <span id="score2">0</span></p>
+      </div>
+      <div>
+        <p>Pole Gracza 2</p>
+        <div class="board" id="board2"></div>
+        <p>Trafienia Gracza 1: <span id="score1">0</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Финальный экран -->
+  <div id="victory-screen" style="display:none;">
+    <h2 id="victory-message"></h2>
+  </div>
+
+  <script src="1.js"></script>
+</body>
+</html>
